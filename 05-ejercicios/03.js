@@ -9,7 +9,10 @@
  */
 
 function getbyIdx(array, idx) {
-
+    if (idx < 0 || array.length <= idx) {
+        return 'Elemento no existe';
+    }
+    return arr[idx];
 }
 
 let resultado = getbyIdx([1, 2], 1);
